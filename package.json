@@ -1,0 +1,12 @@
+{
+  "name": "inazo-host",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:un-vector-tile-toolkit/inazo-host",
+  "author": "Hidenori Fujimura <hfu@users.noreply.github.com>",
+  "license": "Unlicense",
+  "dependencies": {
+    "config": "^3.2.2",
+    "hjson": "^3.1.2"
+  }
+}

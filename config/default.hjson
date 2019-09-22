@@ -3,6 +3,5 @@
   fontsDir: ../noto-jp
   mbtilesPath: ../inazo-produce/tiles.mbtiles
   port: 3000
-  host: localhost
 }
 

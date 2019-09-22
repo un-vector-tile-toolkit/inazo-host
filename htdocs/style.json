@@ -1,0 +1,80 @@
+{
+  "center": [
+    15,
+    44
+  ],
+  "glyphs": "http://localhost:3000/fonts/{fontstack}/{range}.pbf",
+  "host": "localhost",
+  "layers": [
+    {
+      "id": "ba010",
+      "paint": {
+        "line-color": [
+          "rgb",
+          0,
+          0,
+          255
+        ]
+      },
+      "source": "v",
+      "source-layer": "ba010",
+      "type": "line"
+    },
+    {
+      "id": "fa000",
+      "paint": {
+        "line-color": [
+          "rgb",
+          255,
+          0,
+          0
+        ]
+      },
+      "source": "v",
+      "source-layer": "fa000",
+      "type": "line"
+    },
+    {
+      "id": "an010",
+      "paint": {
+        "line-color": [
+          "rgb",
+          64,
+          64,
+          64
+        ]
+      },
+      "source": "v",
+      "source-layer": "an010",
+      "type": "line"
+    },
+    {
+      "id": "ap030",
+      "paint": {
+        "line-color": [
+          "rgb",
+          0,
+          255,
+          255
+        ]
+      },
+      "source": "v",
+      "source-layer": "ap030",
+      "type": "line"
+    }
+  ],
+  "port": 3000,
+  "sources": {
+    "v": {
+      "attribution": "This product includes Intellectual Property from European National Mapping and Cadastral Authorities and is licensed on behalf of these by EuroGeographics. Original product is freely available at eurogeographics.org. Terms of the licence available at https://eurogeographics.org/products-and-services/open-data/topographic-data/",
+      "maxzoom": 8,
+      "minzoom": 4,
+      "tiles": [
+        "http://localhost:3000/zxy/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    }
+  },
+  "version": 8,
+  "zoom": 7
+}

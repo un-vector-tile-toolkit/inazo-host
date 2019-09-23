@@ -7,6 +7,122 @@
   "host": "localhost",
   "layers": [
     {
+      "id": "background",
+      "paint": {
+        "background-color": [
+          "rgb",
+          243,
+          245,
+          250
+        ]
+      },
+      "type": "background"
+    },
+    {
+      "filter": [
+        "match",
+        [
+          "get",
+          "use"
+        ],
+        30,
+        true,
+        31,
+        true,
+        111,
+        true,
+        false
+      ],
+      "id": "fa000-2",
+      "paint": {
+        "line-color": [
+          "rgb",
+          128,
+          128,
+          128
+        ],
+        "line-dasharray": [
+          1,
+          1
+        ]
+      },
+      "source": "v",
+      "source-layer": "fa000",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "match",
+        [
+          "get",
+          "use"
+        ],
+        26,
+        true,
+        false
+      ],
+      "id": "fa000-1",
+      "paint": {
+        "line-color": [
+          "rgb",
+          128,
+          128,
+          128
+        ],
+        "line-dasharray": [
+          5,
+          1
+        ]
+      },
+      "source": "v",
+      "source-layer": "fa000",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "match",
+        [
+          "get",
+          "use"
+        ],
+        23,
+        true,
+        false
+      ],
+      "id": "fa000-0",
+      "paint": {
+        "line-color": [
+          "rgb",
+          128,
+          128,
+          128
+        ],
+        "line-dasharray": [
+          8,
+          2,
+          2,
+          2
+        ]
+      },
+      "source": "v",
+      "source-layer": "fa000",
+      "type": "line"
+    },
+    {
+      "id": "xx500",
+      "paint": {
+        "line-color": [
+          "rgb",
+          0,
+          255,
+          255
+        ]
+      },
+      "source": "v",
+      "source-layer": "xx500",
+      "type": "line"
+    },
+    {
       "id": "ba010",
       "paint": {
         "line-color": [
@@ -21,17 +137,34 @@
       "type": "line"
     },
     {
-      "id": "fa000",
+      "id": "an010-hatching",
       "paint": {
         "line-color": [
           "rgb",
-          255,
+          64,
+          64,
+          64
+        ],
+        "line-dasharray": [
+          0.1,
+          8
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
           0,
-          0
+          15,
+          16
         ]
       },
       "source": "v",
-      "source-layer": "fa000",
+      "source-layer": "an010",
       "type": "line"
     },
     {
@@ -68,7 +201,7 @@
     "v": {
       "attribution": "This product includes Intellectual Property from European National Mapping and Cadastral Authorities and is licensed on behalf of these by EuroGeographics. Original product is freely available at eurogeographics.org. Terms of the licence available at https://eurogeographics.org/products-and-services/open-data/topographic-data/",
       "maxzoom": 8,
-      "minzoom": 4,
+      "minzoom": 2,
       "tiles": [
         "http://localhost:3000/zxy/{z}/{x}/{y}.pbf"
       ],

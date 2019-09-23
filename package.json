@@ -6,7 +6,15 @@
   "author": "Hidenori Fujimura <hfu@users.noreply.github.com>",
   "license": "Unlicense",
   "dependencies": {
+    "@mapbox/mbtiles": "^0.11.0",
     "config": "^3.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "hjson": "^3.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babelify": "^10.0.0"
   }
 }

@@ -37,9 +37,9 @@
       "paint": {
         "line-color": [
           "rgb",
-          128,
-          128,
-          128
+          224,
+          224,
+          224
         ],
         "line-dasharray": [
           1,
@@ -65,9 +65,9 @@
       "paint": {
         "line-color": [
           "rgb",
-          128,
-          128,
-          128
+          224,
+          224,
+          224
         ],
         "line-dasharray": [
           5,
@@ -93,9 +93,9 @@
       "paint": {
         "line-color": [
           "rgb",
-          128,
-          128,
-          128
+          224,
+          224,
+          224
         ],
         "line-dasharray": [
           8,
@@ -127,9 +127,9 @@
       "paint": {
         "line-color": [
           "rgb",
-          0,
-          0,
-          255
+          79,
+          195,
+          247
         ]
       },
       "source": "v",
@@ -141,9 +141,9 @@
       "paint": {
         "line-color": [
           "rgb",
-          64,
-          64,
-          64
+          189,
+          189,
+          189
         ],
         "line-dasharray": [
           0.1,
@@ -152,7 +152,8 @@
         "line-width": [
           "interpolate",
           [
-            "linear"
+            "exponential",
+            2
           ],
           [
             "zoom"
@@ -172,9 +173,9 @@
       "paint": {
         "line-color": [
           "rgb",
-          64,
-          64,
-          64
+          189,
+          189,
+          189
         ]
       },
       "source": "v",
@@ -182,13 +183,105 @@
       "type": "line"
     },
     {
-      "id": "ap030",
+      "id": "ap030-case",
       "paint": {
         "line-color": [
           "rgb",
+          224,
+          224,
+          224
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
           0,
-          255,
-          255
+          7,
+          [
+            "match",
+            [
+              "get",
+              "rtt"
+            ],
+            16,
+            3,
+            14,
+            2,
+            15,
+            1,
+            1
+          ],
+          16,
+          40
+        ]
+      },
+      "source": "v",
+      "source-layer": "ap030",
+      "type": "line"
+    },
+    {
+      "id": "ap030",
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "rtt"
+          ],
+          16,
+          [
+            "rgb",
+            174,
+            213,
+            129
+          ],
+          14,
+          [
+            "rgb",
+            255,
+            183,
+            77
+          ],
+          15,
+          [
+            "rgb",
+            255,
+            241,
+            118
+          ],
+          [
+            "rgb",
+            224,
+            224,
+            224
+          ]
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            2
+          ],
+          0,
+          7,
+          [
+            "match",
+            [
+              "get",
+              "rtt"
+            ],
+            16,
+            3,
+            14,
+            2,
+            15,
+            1,
+            1
+          ],
+          16,
+          42
         ]
       },
       "source": "v",

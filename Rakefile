@@ -1,5 +1,11 @@
 task :build do 
   sh "parse-hocon hocon/style.conf --output htdocs/style.json"
+  unless ENV['URL'].nil?
+    target = 'http://localhost:3000'
+    buf = File.open('htdocs/style.json', 'r') { |f| f.read() }
+    buf.gsub!(target) { ENV['URL'] }
+    File.open('htdocs/style.json', 'w') { |f| f.write(buf) }
+  end
   sh "gl-style-validate htdocs/style.json"
   sh "browserify -o htdocs/bundle.js -t " +
     "[ babelify --presets [ @babel/preset-env ] ] app.js"
